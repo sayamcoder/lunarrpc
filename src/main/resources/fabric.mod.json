@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "lunar-rpc",
+  "version": "${version}",
+  "name": "Lunar RPC",
+  "description": "Displays 'Playing Minecraft with Lunar Client' on Discord Rich Presence when playing through SKLauncher.",
+  "authors": [
+    "LunarRPC"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/lunar-rpc/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.lunarrpc.LunarRPCMod"
+    ]
+  },
+  "mixins": [
+    "lunar-rpc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
